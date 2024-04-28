@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.banner {
+  display: none;
+  margin-bottom: 2%;
+}
+
+.mobile-banner {
+  background-image: url("../images/Rectangle 21.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 40vh;
+}
+.mobile-banner .mobile-nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-banner .mobile-nav .hamburger {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  border: 2px solid brown;
+}
+.mobile-banner .mobile-nav .hamburger .line {
+  height: 2px;
+  width: 70%;
+  background-color: brown;
+}
+
+.Mission .row {
+  height: 100%;
+}
+.Mission .row .left {
+  height: 60vh;
+}
+.Mission .row .left .src {
+  background-image: url("../images/Rectangle 14.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+.Mission .row .left .overlay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 120%;
+  align-items: flex-end;
+}
+.Mission .row .left .overlay .box {
+  height: 30%;
+  width: 30%;
+  background-color: brown;
+  color: white;
+  text-align: center;
+  align-content: center;
+  padding: 5px;
+}
+.Mission .row .right .right-side span {
+  color: brown;
+}
+.Mission .row .right .right-side button {
+  border: 1px solid brown;
+  color: brown;
+  background-color: #fff;
+  height: 40px;
+  width: 190px;
+}
+
+.projects {
+  margin-top: 3%;
+}
+.projects .row .man {
+  background-color: brown;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #fff;
+  padding: 40px;
+}
+.projects .row .right .boxes1 {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  align-items: flex-end;
+}
+.projects .row .right .boxes1 .img1 {
+  background-image: url("../images/Rectangle 24.jpg");
+  height: 25vh;
+  width: 33.3%;
+  border: 2px solid brown;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+}
+.projects .row .right .boxes1 .img2 {
+  background-image: url("../images/Rectangle 20.jpg");
+  height: 25vh;
+  width: 33.3%;
+  border: 2px solid brown;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+}
+.projects .row .right .boxes1 .img3 {
+  background-image: url("../images/agriculture.jpg");
+  height: 25vh;
+  width: 33.3%;
+  border: 2px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+}
+.projects .row .right .boxes2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+}
+.projects .row .right .boxes2 .img1 {
+  background-image: url("../images/Rectangle 21.jpg");
+  height: 25vh;
+  width: 33.3%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+}
+.projects .row .right .boxes2 .img2 {
+  background-image: url("../images/Rectangle 14.jpg");
+  height: 25vh;
+  width: 33.3%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+}
+.projects .row .right .boxes2 .img3 {
+  background-image: url("../images/Rectangle 22.jpg");
+  height: 25vh;
+  width: 33.3%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+}
+
+.contact {
+  margin-top: 5%;
+  background-image: url("../images/pexels-cdc-3992949 1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55vh;
+}
+.contact .overlay {
+  background-color: rgba(0, 0, 0, 0.608);
+  height: 100%;
+  align-items: center;
+  display: flex;
+  color: #fff;
+}
+.contact .overlay .container h2 {
+  width: 45%;
+  margin-bottom: 40px;
+}
+.contact .overlay .container .email {
+  margin-top: 80px;
+}
+.contact .overlay .container .email button {
+  background-color: brown;
+  color: #fff;
+  height: 40px;
+  width: 170px;
+  border: none;
+}
+.contact .overlay .container .email input {
+  width: 27%;
+  height: 40px;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.lorem {
+  margin-top: 3%;
+  border: 2px solid brown;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.lorem p {
+  padding: 20px;
+}
+
+.footer {
+  background-color: brown;
+  color: #fff;
+  margin-top: 4%;
+}
+.footer .circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .circle .round {
+  display: flex;
+  gap: 5px;
+}
+.footer .circle .round .dot {
+  margin-bottom: 4%;
+  width: 14px;
+  height: 14px;
+  background-color: black;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+}
+.footer .join {
+  margin-bottom: 2%;
+}
+.footer .join span {
+  text-decoration: underline;
+}
+.footer .join .row img {
+  width: 100%;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mobile-banner {
+    display: none !important;
+  }
+  .banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../images/Rectangle 2.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    top: 0;
+  }
+  .banner .pc-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 70%;
+    box-shadow: 6px 6px 10px grey;
+    height: 60px;
+    background-color: #fff;
+  }
+  .banner .pc-nav .nav-icons {
+    width: 70px;
+    height: 100%;
+    background-color: brown;
+  }
+  .banner .pc-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: brown;
+  }
+  .banner .pc-nav ul img {
+    height: 40px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
