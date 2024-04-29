@@ -51,7 +51,6 @@ table {
 // PHONE
 .banner{
 	display: none;
-	margin-bottom: 2%;
 }
 .mobile-banner{
 	background-image: url("../images/Rectangle\ 21.jpg");
@@ -85,6 +84,7 @@ table {
 }
 
 .Mission{
+	margin-top: 5%;
 .row{
 	height: 100%;
 		 .left{
@@ -287,42 +287,104 @@ table {
 		}
 	}
 	.footer{
+		margin-top: 2%;
+		padding: 40px 0;
 		background-color: brown;
-		color: #fff;
-		margin-top: 4%;
-.circle{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	.round{
-		display: flex;
-		gap: 5px;
+		.container{
+			color: white;
+			.row{
+				.left{
 
-		.dot{
-			margin-bottom: 4%;
-			width: 14px;
-			height: 14px;
-			background-color: black;
-			border-radius: 50%;
-			border: 3px solid white;
-			display: flex;
-
-		}
-	}
-}
-	.join{
-		margin-bottom: 2%;
-		span{
-			text-decoration: underline;
-		}
-		.row{
-			img{
-				width: 100%;
+					.circle{
+						display: flex;
+						flex-direction: row;
+						gap: 100px;
+					.round{
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						text-align: center;
+						gap: 5px;
+						.dot{
+						background-color: #000;
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						border: 3px solid #fff;
+						margin-bottom: 7%;
+					}
+				}
+			}	
+					}
+					.likes{
+						display: flex;
+						justify-content: center;
+						flex-direction: column;
+						align-items: center;
+					}
+					.join{
+						.mari{
+						img{
+							width: 6rem;
+							height: 6rem;
+						}
+					}
+					}
+				}
 			}
 		}
-	}
+	.mobile-footer{
+		margin-top: 2%;
+		padding: 40px 0;
+		background-color: brown;
+		.container{
+			color: white;
+			.row{
+				.left{
 
-	}
+					.circle{
+					.round{
+						display: flex;
+						gap: 5px;
+						width: 100%;
+						.dot{
+						background-color: #000;
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						border: 3px solid #fff;
+						margin-top: 1.3%;
+					}
+				}
+			}	
+					}
+					.likes{
+						
+						div{
+							display: flex;
+							flex-direction: row;
+							gap: 20px;
+						}
+					}
+					.join{
+						span{
+							text-decoration: underline;
+						}
+						.mari{
+						img{
+							width: 6rem;
+							height: 6rem;
+						}
+					}
+					}
+				}
+			}
+		}
+		.pc-footer{
+			display: none;
+		}
+	
+
 
 
 
@@ -359,7 +421,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+	.pc-footer{display: block;} 
+	.mobile-footer{display: none;}
  .mobile-banner{
  display: none !important;
 }
@@ -376,6 +440,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	top: 0;
 	
 	.pc-nav{
+		margin-top: 20px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;

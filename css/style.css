@@ -54,7 +54,6 @@ table {
 
 .banner {
   display: none;
-  margin-bottom: 2%;
 }
 
 .mobile-banner {
@@ -86,6 +85,9 @@ table {
   background-color: brown;
 }
 
+.Mission {
+  margin-top: 5%;
+}
 .Mission .row {
   height: 100%;
 }
@@ -274,36 +276,80 @@ table {
 }
 
 .footer {
+  margin-top: 2%;
+  padding: 40px 0;
   background-color: brown;
-  color: #fff;
-  margin-top: 4%;
 }
-.footer .circle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.footer .container {
+  color: white;
 }
-.footer .circle .round {
+.footer .container .row .left .circle {
   display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.footer .container .row .left .circle .round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 5px;
 }
-.footer .circle .round .dot {
-  margin-bottom: 4%;
-  width: 14px;
-  height: 14px;
-  background-color: black;
+.footer .container .row .left .circle .round .dot {
+  background-color: #000;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #fff;
+  margin-bottom: 7%;
+}
+.footer .container .row .likes {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.footer .join {
-  margin-bottom: 2%;
+.footer .container .row .join .mari img {
+  width: 6rem;
+  height: 6rem;
 }
-.footer .join span {
+
+.mobile-footer {
+  margin-top: 2%;
+  padding: 40px 0;
+  background-color: brown;
+}
+.mobile-footer .container {
+  color: white;
+}
+.mobile-footer .container .row .left .circle .round {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+.mobile-footer .container .row .left .circle .round .dot {
+  background-color: #000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-top: 1.3%;
+}
+.mobile-footer .container .row .likes div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.mobile-footer .container .row .join span {
   text-decoration: underline;
 }
-.footer .join .row img {
-  width: 100%;
+.mobile-footer .container .row .join .mari img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.pc-footer {
+  display: none;
 }
 
 /*
@@ -323,6 +369,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .pc-footer {
+    display: block;
+  }
+  .mobile-footer {
+    display: none;
+  }
   .mobile-banner {
     display: none !important;
   }
@@ -339,6 +391,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     top: 0;
   }
   .banner .pc-nav {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
